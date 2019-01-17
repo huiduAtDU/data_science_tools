@@ -1,7 +1,8 @@
-def square(high, n):
+def apply_fn(high, fn = lambda x:x):
     '''
     create squrare
     '''
-    return [i**n for i in range(high)]
+    return [fn(i) for i in range(high)]
 
-print(list(square(10,2)))
+print(apply_fn(10, lambda x: x**10)]
+
