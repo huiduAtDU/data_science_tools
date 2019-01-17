@@ -4,4 +4,4 @@ def square(high, n):
     '''
     return [i**n for i in range(high)]
 
-print(square(10,2))
+print(list(square(10,2)))
