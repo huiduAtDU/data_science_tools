@@ -121,7 +121,26 @@ done
 git commit -m "`echo "$commit_message"`"
 git push origin master
 }
-echo "---function commit start---"
-# useage: lazy_commit "filename1" "filename2" ... "commit message"
-lazy_commit calculate_basic_stats.sh "script submitted"
-echo "---function commit end-----"
+
+### function Test
+#echo "---function commit start---"
+## useage: lazy_commit "filename1" "filename2" ... "commit message"
+#lazy_commit calculate_basic_stats.sh "script submitted"
+#echo "---function commit end-----"
+
+###output
+#---function commit start---
+#[master 83c2cf1] script submitted
+#1 file changed, 127 insertions(+)
+#create mode 100755 calculate_basic_stats.sh
+#Username for 'https://github.com': huiduAtDU
+#Password for 'https://huiduAtDU@github.com':
+#Counting objects: 3, done.
+#Delta compression using up to 4 threads.
+#Compressing objects: 100% (3/3), done.
+#Writing objects: 100% (3/3), 2.02 KiB | 2.02 MiB/s, done.
+#Total 3 (delta 0), reused 0 (delta 0)
+#To https://github.com/huiduAtDU/data_science_tools.git
+#ea6123b..83c2cf1  master -> master
+#---function commit end-----
+
